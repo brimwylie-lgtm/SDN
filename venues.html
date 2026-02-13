@@ -9,47 +9,47 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root { --primary-blue: #003366; --accent-red: #CC0000; --accent-orange: #FF6600; --light-gray: #F5F5F5; --dark-gray: #333333; }
         body { font-family: 'Inter', sans-serif; color: var(--dark-gray); line-height: 1.6; }
-        nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); padding: 1.5rem 5%; z-index: 1000; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); }
+        nav { position: fixed; top: 0; left: 0; right: 0; background: white; backdrop-filter: blur(10px); padding: 1.5rem 5%; z-index: 1000; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); }
         .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
         .logo { height: 50px; }
         .nav-links { display: flex; gap: 2.5rem; list-style: none; align-items: center; }
-        .nav-links a { text-decoration: none; color: var(--primary-blue); font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; position: relative; }
+        .nav-links a { text-decoration: none; color: white; font-weight: 500; font-size: 0.95rem; transition: all 0.3s ease; position: relative; }
         .nav-links a.active { color: var(--accent-red); }
-        .nav-links a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--accent-red); transition: width 0.3s ease; }
+        .nav-links a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--accent-orange); transition: width 0.3s ease; }
         .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
-        .cta-button { background: var(--accent-red); color: white !important; padding: 0.7rem 1.8rem; border-radius: 30px; }
+        .cta-button { background: var(--accent-orange); color: white !important; padding: 0.7rem 1.8rem; border-radius: 30px; }
         .cta-button::after { display: none; }
         .page-header { padding: 150px 5% 80px; background: linear-gradient(135deg, var(--primary-blue) 0%, #004d99 100%); color: white; text-align: center; }
         .page-header h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 6vw, 5rem); margin-bottom: 1.5rem; letter-spacing: 2px; }
         .page-header p { font-size: 1.3rem; max-width: 800px; margin: 0 auto; opacity: 0.9; }
         .value-prop { padding: 6rem 5%; background: white; }
         .value-container { max-width: 1000px; margin: 0 auto; }
-        .value-container h2 { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: var(--primary-blue); margin-bottom: 2rem; text-align: center; }
+        .value-container h2 { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: white; margin-bottom: 2rem; text-align: center; }
         .value-box { background: var(--light-gray); padding: 3rem; border-radius: 20px; margin-bottom: 3rem; border-left: 5px solid var(--accent-orange); }
         .value-box p { font-size: 1.2rem; line-height: 1.9; color: #555; margin-bottom: 1rem; }
         .benefits-section { padding: 6rem 5%; background: var(--light-gray); }
         .benefits-container { max-width: 1200px; margin: 0 auto; }
-        .benefits-container h2 { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: var(--primary-blue); margin-bottom: 3rem; text-align: center; }
+        .benefits-container h2 { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: white; margin-bottom: 3rem; text-align: center; }
         .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
         .benefit-card { background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; text-align: center; }
         .benefit-card:hover { transform: translateY(-10px); box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15); }
         .benefit-icon { width: 80px; height: 80px; background: linear-gradient(135deg, var(--accent-red), var(--accent-orange)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin: 0 auto 1.5rem; }
-        .benefit-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--primary-blue); margin-bottom: 1rem; }
+        .benefit-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: white; margin-bottom: 1rem; }
         .benefit-card p { color: #666; line-height: 1.7; }
         .requirements { padding: 6rem 5%; background: white; }
         .requirements-container { max-width: 1000px; margin: 0 auto; }
-        .requirements-container h2 { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: var(--primary-blue); margin-bottom: 3rem; text-align: center; }
+        .requirements-container h2 { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: white; margin-bottom: 3rem; text-align: center; }
         .req-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
         .req-item { display: flex; gap: 1.5rem; align-items: start; }
         .req-number { font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: var(--accent-orange); line-height: 1; flex-shrink: 0; }
-        .req-content h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; color: var(--primary-blue); margin-bottom: 0.5rem; }
+        .req-content h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; color: white; margin-bottom: 0.5rem; }
         .req-content p { color: #666; line-height: 1.7; }
         .cta-section { background: linear-gradient(135deg, var(--accent-red) 0%, var(--accent-orange) 100%); padding: 6rem 5%; text-align: center; color: white; }
         .cta-content h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 5vw, 3.5rem); margin-bottom: 1.5rem; letter-spacing: 2px; }
         .cta-content p { font-size: 1.3rem; margin-bottom: 2.5rem; opacity: 0.95; }
         .btn-white { background: white; color: var(--accent-red); padding: 1.2rem 3rem; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-block; font-size: 1.1rem; transition: all 0.3s ease; }
         .btn-white:hover { transform: translateY(-3px); box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); }
-        footer { background: var(--primary-blue); color: white; padding: 4rem 5% 2rem; }
+        footer { background: white; color: white; padding: 4rem 5% 2rem; }
         .footer-content { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
         .footer-about p { opacity: 0.8; line-height: 1.8; }
         .footer-section h4 { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; margin-bottom: 1.5rem; }
@@ -71,7 +71,7 @@
 <body>
     <nav>
         <div class="nav-container">
-            <img src="https://www.sdnetwork.ca/wp-content/uploads/2023/03/SDN-Dark.png" alt="Sports Digital Network" class="logo">
+            <img src="https://www.sdnetwork.ca/wp-content/uploads/2023/03/SDN-Light.png" alt="Sports Digital Network" class="logo">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
